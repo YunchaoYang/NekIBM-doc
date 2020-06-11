@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>NekIBM’s documentation &mdash; NekIBM beta documentation</title>
+  <title>A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk &mdash; NekIBM beta documentation</title>
   
 
   
@@ -79,10 +79,9 @@
             
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="problem_setup.html">Problem Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Problem Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
 </ul>
@@ -130,7 +129,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>NekIBM’s documentation</li>
+      <li>A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -149,32 +148,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="nekibm-s-documentation">
-<h1>NekIBM’s documentation<a class="headerlink" href="#nekibm-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="a-parallel-immersed-boundary-implementation-based-on-nek5000-cmtenk">
+<h1>A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk<a class="headerlink" href="#a-parallel-immersed-boundary-implementation-based-on-nek5000-cmtenk" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="nekibm-s-documentation">
+<h2>NekIBM’s documentation<a class="headerlink" href="#nekibm-s-documentation" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="quickstart.html#directory-structure">Directory structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quickstart.html#case-files">Case files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quickstart.html#scripts">Scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#meshing">Meshing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#visualization">Visualization</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#general">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#installing-compiling-and-running">Installing, Compiling, and Running</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#pre-processing-and-numerics">Pre-Processing and Numerics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#physical-models">Physical Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#computational-speed">Computational Speed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#troubleshooting">Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#post-processing">Post-Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#preprocessing">Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html#postprocessing">Postprocessing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="problem_setup.html">Problem Setup</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a><ul>
@@ -193,27 +181,33 @@
 <li class="toctree-l2"><a class="reference internal" href="theory.html#arbitrary-lagrangian-eulerian-ale">Arbitrary Lagrangian-Eulerian (ALE)</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Problem Setup</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendices</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#build-options">Build Options</a></li>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#internal-input-parameters-switches">Internal Input Parameters/Switches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#commonly-used-variables">Commonly used Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#commonly-used-subroutines">Commonly used Subroutines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#generating-a-mesh-with-genbox">Generating a Mesh with Genbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="appendix.html#mesh-modification">Mesh Modification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="appendix.html#mesh-extrusion-and-mirroring">Mesh Extrusion and Mirroring</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
 </ul>
 </div>
+<div class="note admonition">
+<p class="first admonition-title">Recommended Citation</p>
+<p class="last">Zwick, D. (2019). ppiclF: A Parallel Particle-In-Cell Library in Fortran. <em>Journal of Open Source Software.</em> 4(37), 1400. <a class="reference external" href="https://doi.org/10.21105/joss.01400">https://doi.org/10.21105/joss.01400</a></p>
+</div>
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
 <li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
+</div>
 </div>
 
 

@@ -28,7 +28,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="NekIBM’s documentation" href="index.html" /> 
+    <link rel="next" title="Tutorials" href="tutorials.html" />
+    <link rel="prev" title="A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,10 +83,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#directory-structure">Directory structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#case-files">Case files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#scripts">Scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#meshing">Meshing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preprocessing">Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#postprocessing">Postprocessing</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theory.html">Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Problem Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
 </ul>
 
             
@@ -160,27 +166,35 @@
 </div>
 <div class="section" id="scripts">
 <h2>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">¶</a></h2>
-<p>Let’s walk through some useful batch scripts:</p>
+<p>In this section, some useful batch scripts for compiling and running a NekIBM cases. The folloing steps are listed for running a standard Nek5000/CMTnek case.</p>
+<p>preprocessing
+- <code class="docutils literal notranslate"><span class="pre">genbox</span> <span class="pre">&lt;case&gt;</span></code> prepare flow domain and spectral element discretization
+- <code class="docutils literal notranslate"><span class="pre">genmap</span> <span class="pre">&lt;case&gt;</span></code> mapping</p>
+<p>compling NekIBM
+- <code class="docutils literal notranslate"><span class="pre">makenek</span> <span class="pre">&lt;case&gt;</span></code> compiles your case</p>
+<p>running a parallel case</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">makenek</span> <span class="pre">&lt;case&gt;</span></code> compiles your case</li>
-<li><code class="docutils literal notranslate"><span class="pre">nek/nekb</span> <span class="pre">&lt;case&gt;</span></code> runs a serial job in foreground or background</li>
 <li><code class="docutils literal notranslate"><span class="pre">nekmpi/nekbmpi</span> <span class="pre">&lt;case&gt;</span> <span class="pre">&lt;number</span> <span class="pre">of</span> <span class="pre">ranks&gt;</span></code> runs a parallel job</li>
-<li><code class="docutils literal notranslate"><span class="pre">neknek</span> <span class="pre">&lt;case1&gt;</span> <span class="pre">&lt;cas2&gt;</span> <span class="pre">&lt;ranks</span> <span class="pre">1&gt;</span> <span class="pre">&lt;ranks</span> <span class="pre">2&gt;</span></code> runs Nek5000 with two overlapping component grids</li>
-<li><code class="docutils literal notranslate"><span class="pre">visnek</span> <span class="pre">&lt;case&gt;</span></code> creates metadata file required by <a class="reference external" href="https://wci.llnl.gov/simulation/computer-codes/visit/">VisIt</a> and <a class="reference external" href="https://www.paraview.org/">ParaView</a>.</li>
-<li><code class="docutils literal notranslate"><span class="pre">mvn</span> <span class="pre">&lt;old</span> <span class="pre">name&gt;</span> <span class="pre">&lt;new</span> <span class="pre">name&gt;</span></code> renames all case files</li>
-<li><code class="docutils literal notranslate"><span class="pre">cpn</span> <span class="pre">&lt;old</span> <span class="pre">name&gt;</span> <span class="pre">&lt;new</span> <span class="pre">name&gt;</span></code> copies all case files</li>
 </ul>
+<p>postprocessing
+- <code class="docutils literal notranslate"><span class="pre">visnek</span> <span class="pre">&lt;case&gt;</span></code> creates metadata file required by <a class="reference external" href="https://wci.llnl.gov/simulation/computer-codes/visit/">VisIt</a> and <a class="reference external" href="https://www.paraview.org/">ParaView</a>.</p>
 </div>
-<div class="section" id="meshing">
-<h2>Meshing<a class="headerlink" href="#meshing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="preprocessing">
+<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h2>
 <p>Nek5000 is mainly a solver. However, simple box type meshes can be generated with the <code class="docutils literal notranslate"><span class="pre">genbox</span></code> tool. For more complex meshes please consider using <code class="docutils literal notranslate"><span class="pre">PRENEK</span></code> and the meshing tools <code class="docutils literal notranslate"><span class="pre">nekmerge</span></code> and <code class="docutils literal notranslate"><span class="pre">n2to3</span></code>. We provide mesh converters like <code class="docutils literal notranslate"><span class="pre">exo2nek</span></code> and <code class="docutils literal notranslate"><span class="pre">msh2nek</span></code> which are quite handy if you want to use your favorite mesh generator. Also check our
 <a class="reference external" href="https://github.com/Nek5000/NekBazaar">Bazaar</a> for 3rd party meshing tools.</p>
 </div>
-<div class="section" id="visualization">
-<span id="qstart-vis"></span><h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="postprocessing">
+<span id="qstart-vis"></span><h2>Postprocessing<a class="headerlink" href="#postprocessing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Flow</span> <span class="pre">visualization</span></code></li>
+</ul>
 <p>Nek5000 output (<code class="docutils literal notranslate"><span class="pre">.fld</span></code> or <code class="docutils literal notranslate"><span class="pre">0.f%05d</span></code>) files can be read by <a class="reference external" href="https://wci.llnl.gov/simulation/computer-codes/visit/">VisIt</a> or
 <a class="reference external" href="https://www.paraview.org/">ParaView</a>. This requires using <code class="docutils literal notranslate"><span class="pre">visnek</span></code> to generate a metadata file.
 There is also an build-in X-Window based postprocessor called <code class="docutils literal notranslate"><span class="pre">POSTNEK</span></code> located in tools.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Particle</span> <span class="pre">visualization</span></code></li>
+</ul>
 </div>
 </div>
 
@@ -192,8 +206,10 @@ There is also an build-in X-Window based postprocessor called <code class="docut
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="index.html" class="btn btn-neutral" title="NekIBM’s documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral" title="A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

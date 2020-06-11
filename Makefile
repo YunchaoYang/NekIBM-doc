@@ -7,6 +7,8 @@ SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = NekIBM
 SOURCEDIR     = source
 BUILDDIR      = build
+# PDFBUILDDIR   = /tmp
+# PDF           = ./NekIBM_doc.pdf
 
 # Put it first so that "make" without argument is like "make help".
 help:

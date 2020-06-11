@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Appendices" href="appendix.html" />
-    <link rel="prev" title="Problem Setup" href="problem_setup.html" /> 
+    <link rel="next" title="Problem Setup" href="examples.html" />
+    <link rel="prev" title="Tutorials" href="tutorials.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -80,9 +80,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="problem_setup.html">Problem Setup</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Theory</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#computational-approach">Computational Approach</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#incompressible-navier-stokes-equations">Incompressible Navier-Stokes Equations</a></li>
@@ -99,6 +97,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#arbitrary-lagrangian-eulerian-ale">Arbitrary Lagrangian-Eulerian (ALE)</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Problem Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
 </ul>
@@ -189,13 +188,11 @@ velocity <span class="math notranslate nohighlight">\(\mathbf u=(u_{x},u_{y},u_{
 All of the above field variables are functions of space <span class="math notranslate nohighlight">\({\bf x}=(x,y,z)\)</span> and time <span class="math notranslate nohighlight">\(t\)</span>
 in domains <span class="math notranslate nohighlight">\(\Omega_f\)</span> and/or <span class="math notranslate nohighlight">\(\Omega_s\)</span> defined in <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig-walls</span></code>.
 Additionally Nek5000 can handle conjugate heat transfer problems.</p>
-<div class="align-center figure" id="id6">
-<span id="fig-walls"></span><img alt="domains" src="figs/walls.png" />
-<p class="caption"><span class="caption-text">Computational domain showing respective fluid and solid subdomains, <span class="math notranslate nohighlight">\(\Omega_f\)</span> and
+<blockquote id="fig-walls">
+<div>Computational domain showing respective fluid and solid subdomains, <span class="math notranslate nohighlight">\(\Omega_f\)</span> and
 <span class="math notranslate nohighlight">\(\Omega_s\)</span>.  The shared boundaries are denoted <span class="math notranslate nohighlight">\(\partial\Omega_f=\partial\Omega_s\)</span>
 and the solid boundary which is not shared by fluid is <span class="math notranslate nohighlight">\(\overline{\partial\Omega_s}\)</span>,
-while the fluid boundary not shared by solid <span class="math notranslate nohighlight">\(\overline{\partial\Omega_f}\)</span>.</span></p>
-</div>
+while the fluid boundary not shared by solid <span class="math notranslate nohighlight">\(\overline{\partial\Omega_f}\)</span>.</div></blockquote>
 </div>
 <div class="section" id="incompressible-navier-stokes-equations">
 <span id="intro-ns"></span><h2>Incompressible Navier-Stokes Equations<a class="headerlink" href="#incompressible-navier-stokes-equations" title="Permalink to this headline">¶</a></h2>
@@ -427,10 +424,10 @@ and because of this, the overhead for the moving domain formulation is very low.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="appendix.html" class="btn btn-neutral float-right" title="Appendices" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="Problem Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="problem_setup.html" class="btn btn-neutral" title="Problem Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="tutorials.html" class="btn btn-neutral" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
