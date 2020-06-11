@@ -1,24 +1,49 @@
 .. NekIBM documentation master file, created by
    sphinx-quickstart on Wed Dec  4 16:06:11 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 ===============================================================================================
  A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk 
 ===============================================================================================
 
 
-NekIBM's documentation
-==================================
-
+Quickstart
+----------
 .. toctree::
    :maxdepth: 2
 
    quickstart
-   tutorials
+
+Theory
+----------
+
+.. toctree::
+   :maxdepth: 2
+
    theory
+
+Algorithm
+--------------
+
+.. toctree::
+   :maxdepth: 2
+
+   user
+
+Examples
+--------
+
+.. toctree::
+   :maxdepth: 2
+
    examples
+
+Examples
+--------
+
+.. toctree::
+   :maxdepth: 2
+
    appendix
-   bibliography
+
 
 .. admonition:: Recommended Citation
    :class: note
