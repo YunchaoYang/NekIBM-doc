@@ -47,6 +47,9 @@ Examples
 
 .. admonition:: Recommended Citation
    :class: note
+   
+   Yang, Y., Balachandar, S. (2021) A scalable parallel algorithm for direct-forcing immersed boundary method for multiphase flow simulation on spectral elements. J Supercomput 77, 2897–2927 . https://doi.org/10.1007/s11227-020-03371-2
+
 
    Zwick, D. (2019). ppiclF: A Parallel Particle-In-Cell Library in Fortran. *Journal of Open Source Software.* 4(37), 1400. https://doi.org/10.21105/joss.01400
 
