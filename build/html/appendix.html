@@ -1,82 +1,47 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Appendices &mdash; NekIBM beta documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
 
   
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <script src="_static/jquery.js"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+      <script src="_static/doctools.js"></script>
+      <script src="_static/sphinx_highlight.js"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Problem Setup" href="examples.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
+        <div class="wy-side-nav-search" >
 
           
-            <a href="index.html" class="icon icon-home"> NekIBM
           
-
-          
+          <a href="index.html" class="icon icon-home">
+            NekIBM
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
 </ul>
@@ -111,199 +76,157 @@
 </li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">NekIBM</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Appendices</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Appendices</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/appendix.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="appendices">
-<h1>Appendices<a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="build-options">
-<h2>Build Options<a class="headerlink" href="#build-options" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="appendices">
+<h1>Appendices<a class="headerlink" href="#appendices" title="Permalink to this heading"></a></h1>
+<section id="build-options">
+<h2>Build Options<a class="headerlink" href="#build-options" title="Permalink to this heading"></a></h2>
 <p>The shell script <code class="docutils literal notranslate"><span class="pre">makenek</span></code> is designed to assist the compilation process of Nek5000. The script will create a <code class="docutils literal notranslate"><span class="pre">makefile</span></code> based on the user settings section in <code class="docutils literal notranslate"><span class="pre">makenek</span></code>. The GNU gmake utility is used to build Nek5000.
 Available configurations options:</p>
-<span id="tab-bdms"></span><table border="1" class="colwidths-given docutils" id="id1">
-<caption><span class="caption-text">Compiler options</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<span id="tab-bdms"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Compiler options</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
 <colgroup>
-<col width="24%" />
-<col width="14%" />
-<col width="24%" />
-<col width="39%" />
+<col style="width: 23.5%" />
+<col style="width: 13.7%" />
+<col style="width: 23.5%" />
+<col style="width: 39.2%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">name</th>
-<th class="head">values</th>
-<th class="head">default</th>
-<th class="head">description</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>values</p></th>
+<th class="head"><p>default</p></th>
+<th class="head"><p>description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>PPLIST</td>
-<td>string</td>
-<td>&#160;</td>
-<td>list of pre-processor symbols (CVODE, …)</td>
+<tbody>
+<tr class="row-even"><td><p>PPLIST</p></td>
+<td><p>string</p></td>
+<td></td>
+<td><p>list of pre-processor symbols (CVODE, …)</p></td>
 </tr>
-<tr class="row-odd"><td>MPI</td>
-<td>1, 0</td>
-<td>1</td>
-<td>use MPI (needed for a multiprocessor computation)</td>
+<tr class="row-odd"><td><p>MPI</p></td>
+<td><p>1, 0</p></td>
+<td><p>1</p></td>
+<td><p>use MPI (needed for a multiprocessor computation)</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>FC</td>
-<td>string</td>
-<td>optional</td>
-<td>Fortran compiler (mpif77)</td>
+<tr class="row-odd"><td><p>FC</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>Fortran compiler (mpif77)</p></td>
 </tr>
-<tr class="row-even"><td>CC</td>
-<td>string</td>
-<td>optional</td>
-<td>C compiler (mpicc)</td>
+<tr class="row-even"><td><p>CC</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>C compiler (mpicc)</p></td>
 </tr>
-<tr class="row-odd"><td>FCLAGS</td>
-<td>string</td>
-<td>optional</td>
-<td>optional Fortan compilation flags</td>
+<tr class="row-odd"><td><p>FCLAGS</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>optional Fortan compilation flags</p></td>
 </tr>
-<tr class="row-even"><td>CCLAGS</td>
-<td>string</td>
-<td>optional</td>
-<td>optional C compilation flags</td>
+<tr class="row-even"><td><p>CCLAGS</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>optional C compilation flags</p></td>
 </tr>
-<tr class="row-odd"><td>SOURCE_ROOT</td>
-<td>string</td>
-<td>optional</td>
-<td>path of Nek5000 source</td>
+<tr class="row-odd"><td><p>SOURCE_ROOT</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>path of Nek5000 source</p></td>
 </tr>
-<tr class="row-even"><td>USR</td>
-<td>string</td>
-<td>optional</td>
-<td>object list of additional files to compile make intructions (<code class="docutils literal notranslate"><span class="pre">makefile_usr.inc</span></code> required)</td>
+<tr class="row-even"><td><p>USR</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>object list of additional files to compile make intructions (<code class="docutils literal notranslate"><span class="pre">makefile_usr.inc</span></code> required)</p></td>
 </tr>
-<tr class="row-odd"><td>USR_LFLAGS</td>
-<td>string</td>
-<td>optional</td>
-<td>optional linking flags</td>
+<tr class="row-odd"><td><p>USR_LFLAGS</p></td>
+<td><p>string</p></td>
+<td><p>optional</p></td>
+<td><p>optional linking flags</p></td>
 </tr>
-<tr class="row-even"><td>PROFILING</td>
-<td>1, 0</td>
-<td>1</td>
-<td>enable internal timers for performance statistics</td>
+<tr class="row-even"><td><p>PROFILING</p></td>
+<td><p>1, 0</p></td>
+<td><p>1</p></td>
+<td><p>enable internal timers for performance statistics</p></td>
 </tr>
-<tr class="row-odd"><td>VISIT</td>
-<td>1, 0</td>
-<td>0</td>
-<td>Toggles Visit in situ. See Visit_in_situ for details</td>
+<tr class="row-odd"><td><p>VISIT</p></td>
+<td><p>1, 0</p></td>
+<td><p>0</p></td>
+<td><p>Toggles Visit in situ. See Visit_in_situ for details</p></td>
 </tr>
-<tr class="row-even"><td>VISIT_INSTALL</td>
-<td>string</td>
-<td>VISIT in situ</td>
-<td>Path to VISIT install path. See Visit_in_situ for details.</td>
+<tr class="row-even"><td><p>VISIT_INSTALL</p></td>
+<td><p>string</p></td>
+<td><p>VISIT in situ</p></td>
+<td><p>Path to VISIT install path. See Visit_in_situ for details.</p></td>
 </tr>
-<tr class="row-odd"><td>VISIT_STOP</td>
-<td>true, false</td>
-<td>false</td>
-<td>When running VISIT in situ, simulation stops after step 1 to connect VISIT.</td>
+<tr class="row-odd"><td><p>VISIT_STOP</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>When running VISIT in situ, simulation stops after step 1 to connect VISIT.</p></td>
 </tr>
 </tbody>
 </table>
 <p>The <code class="docutils literal notranslate"><span class="pre">PPLIST</span></code> field can be used to activate several features at compilation time.
 A list of possible options is below:</p>
-<span id="tab-pplist"></span><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">PPLIST options</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Symbol</th>
-<th class="head">Description</th>
+<span id="tab-pplist"></span><table class="docutils align-default" id="id2">
+<caption><span class="caption-text">PPLIST options</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>NOMPIIO</td>
-<td>deactivate MPI-IO support</td>
+<tbody>
+<tr class="row-even"><td><p>NOMPIIO</p></td>
+<td><p>deactivate MPI-IO support</p></td>
 </tr>
-<tr class="row-odd"><td>BGQ</td>
-<td>use Blue Gene Q optimized mxm</td>
+<tr class="row-odd"><td><p>BGQ</p></td>
+<td><p>use Blue Gene Q optimized mxm</p></td>
 </tr>
-<tr class="row-even"><td>XSMM</td>
-<td>use libxsmm for mxm</td>
+<tr class="row-even"><td><p>XSMM</p></td>
+<td><p>use libxsmm for mxm</p></td>
 </tr>
-<tr class="row-odd"><td>CVODE</td>
-<td>compile with CVODE support for scalars</td>
+<tr class="row-odd"><td><p>CVODE</p></td>
+<td><p>compile with CVODE support for scalars</p></td>
 </tr>
-<tr class="row-even"><td>VENDOR_BLAS</td>
-<td>use VENDOR BLAS/LAPACK</td>
+<tr class="row-even"><td><p>VENDOR_BLAS</p></td>
+<td><p>use VENDOR BLAS/LAPACK</p></td>
 </tr>
-<tr class="row-odd"><td>EXTBAR</td>
-<td>add underscore to exit call (for BGQ)</td>
+<tr class="row-odd"><td><p>EXTBAR</p></td>
+<td><p>add underscore to exit call (for BGQ)</p></td>
 </tr>
-<tr class="row-even"><td>NEKNEK</td>
-<td>activate overlapping mesh solver (experimental)</td>
+<tr class="row-even"><td><p>NEKNEK</p></td>
+<td><p>activate overlapping mesh solver (experimental)</p></td>
 </tr>
-<tr class="row-odd"><td>CMTNEK</td>
-<td>activate discontinuous Galerkin compressible-flow solver (experimental)</td>
+<tr class="row-odd"><td><p>CMTNEK</p></td>
+<td><p>activate discontinuous Galerkin compressible-flow solver (experimental)</p></td>
 </tr>
 </tbody>
 </table>
@@ -316,11 +239,11 @@ This option  tells the compiler to use a specific memory model to generate code 
 It can affect code size and performance.
 If your program has global and static data with a total size smaller than 2GB, <code class="docutils literal notranslate"><span class="pre">-mcmodel=small</span></code> is sufficient.
 Global and static data larger than 2GB requires <code class="docutils literal notranslate"><span class="pre">-mcmodel=medium</span></code> or <code class="docutils literal notranslate"><span class="pre">-mcmodel=large</span></code>.</p>
-</div>
-<div class="section" id="internal-input-parameters-switches">
-<h2>Internal Input Parameters/Switches<a class="headerlink" href="#internal-input-parameters-switches" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="parameters">
-<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="internal-input-parameters-switches">
+<h2>Internal Input Parameters/Switches<a class="headerlink" href="#internal-input-parameters-switches" title="Permalink to this heading"></a></h2>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h3>
 <style> .red {color:red} </style><div class="line-block">
 <div class="line"><strong>P001</strong>  density for the case of constant properties</div>
 <div class="line"><br /></div>
@@ -431,9 +354,9 @@ Global and static data larger than 2GB requires <code class="docutils literal no
 <div class="line"><strong>P118 NELZ</strong> number of elements in <span class="math notranslate nohighlight">\(z\)</span> for FTP</div>
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="logical-switches">
-<span id="sec-switches"></span><h3>Logical switches<a class="headerlink" href="#logical-switches" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="logical-switches">
+<span id="sec-switches"></span><h3>Logical switches<a class="headerlink" href="#logical-switches" title="Permalink to this heading"></a></h3>
 <p><strong>IFFLOW</strong> solve for fluid (velocity, pressure)</p>
 <p><strong>IFHEAT</strong> solve for heat (temperature and/or scalars)</p>
 <p><strong>IFTRAN</strong> solve transient equations (otherwise, solve the steady Stokes flow)</p>
@@ -447,450 +370,429 @@ Global and static data larger than 2GB requires <code class="docutils literal no
 <p><strong>IFCHAR</strong> use characteristics for convection operator</p>
 <p><strong>IFSYNC</strong> use upfront synchronization</p>
 <p><strong>IFUSERVP</strong> user-defined properties</p>
-</div>
-<div class="section" id="other-input-variables">
-<h3>Other Input Variables<a class="headerlink" href="#other-input-variables" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="other-input-variables">
+<h3>Other Input Variables<a class="headerlink" href="#other-input-variables" title="Permalink to this heading"></a></h3>
 <p><strong>filterType</strong> 0: explicit, 1: HPT-RT</p>
 <p><strong>restol(:)</strong> field solver tolerance</p>
-</div>
-</div>
-<div class="section" id="commonly-used-variables">
-<h2>Commonly used Variables<a class="headerlink" href="#commonly-used-variables" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="solution-variables">
-<h3>Solution Variables<a class="headerlink" href="#solution-variables" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
-<colgroup>
-<col width="15%" />
-<col width="35%" />
-<col width="9%" />
-<col width="41%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Variable Name</th>
-<th class="head">Size</th>
-<th class="head">Type</th>
-<th class="head">Short Description</th>
+</section>
+</section>
+<section id="commonly-used-variables">
+<h2>Commonly used Variables<a class="headerlink" href="#commonly-used-variables" title="Permalink to this heading"></a></h2>
+<section id="solution-variables">
+<h3>Solution Variables<a class="headerlink" href="#solution-variables" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Short Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vx</span></code></td>
-<td>(lx1,ly1,lz1,lelv)</td>
-<td>real</td>
-<td>x-velocity (u)</td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vx</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>x-velocity (u)</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vy</span></code></td>
-<td>(lx1,ly1,lz1,lelv)</td>
-<td>real</td>
-<td>y-velocity (v)</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vy</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>y-velocity (v)</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vz</span></code></td>
-<td>(lx1,ly1,lz1,lelv)</td>
-<td>real</td>
-<td>z-velocity (w)</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vz</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>z-velocity (w)</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pr</span></code></td>
-<td>(lx2,ly2,lz2,lelv)</td>
-<td>real</td>
-<td>pressure (pr)</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pr</span></code></p></td>
+<td><p>(lx2,ly2,lz2,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>pressure (pr)</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">t</span></code></td>
-<td>(lx1,ly1,lz1,lelt,ldimt)</td>
-<td>real</td>
-<td>temperature (t) and passive scalars (ps)</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt,ldimt)</p></td>
+<td><p>real</p></td>
+<td><p>temperature (t) and passive scalars (ps)</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vtrans</span></code></td>
-<td>(lx1,ly1,lz1,lelt,ldimt+1)</td>
-<td>real</td>
-<td>convective coefficient</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vtrans</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt,ldimt+1)</p></td>
+<td><p>real</p></td>
+<td><p>convective coefficient</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vdiff</span></code></td>
-<td>(lx1,ly1,lz1,lelt,ldimt+1)</td>
-<td>real</td>
-<td>diffusion coefficient</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vdiff</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt,ldimt+1)</p></td>
+<td><p>real</p></td>
+<td><p>diffusion coefficient</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vxlag</span></code></td>
-<td>(lx1,ly1,lz1,lelv,2)</td>
-<td>real</td>
-<td>x-velocity at previous time steps</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vxlag</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv,2)</p></td>
+<td><p>real</p></td>
+<td><p>x-velocity at previous time steps</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vylag</span></code></td>
-<td>(lx1,ly1,lz1,lelv,2)</td>
-<td>real</td>
-<td>y-velocity at previous time steps</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vylag</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv,2)</p></td>
+<td><p>real</p></td>
+<td><p>y-velocity at previous time steps</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vzlag</span></code></td>
-<td>(lx1,ly1,lz1,lelv,2)</td>
-<td>real</td>
-<td>z-velocity at previous time steps</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vzlag</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv,2)</p></td>
+<td><p>real</p></td>
+<td><p>z-velocity at previous time steps</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">prlag</span></code></td>
-<td>(lx2,ly2,lz2,lelv,lorder2)</td>
-<td>real</td>
-<td>pressure at previous time steps</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">prlag</span></code></p></td>
+<td><p>(lx2,ly2,lz2,lelv,lorder2)</p></td>
+<td><p>real</p></td>
+<td><p>pressure at previous time steps</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">tlag</span></code></td>
-<td>(lx1,ly1,lz1,lelv,lorder-1,ldimt+1)</td>
-<td>real</td>
-<td>t and ps at previous time steps</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tlag</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv,lorder-1,ldimt+1)</p></td>
+<td><p>real</p></td>
+<td><p>t and ps at previous time steps</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">time</span></code></td>
-<td>–</td>
-<td>real</td>
-<td>physical time</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">time</span></code></p></td>
+<td><p>–</p></td>
+<td><p>real</p></td>
+<td><p>physical time</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">dt</span></code></td>
-<td>–</td>
-<td>real</td>
-<td>time step size</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">dt</span></code></p></td>
+<td><p>–</p></td>
+<td><p>real</p></td>
+<td><p>time step size</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">dtlag</span></code></td>
-<td>( 10 )</td>
-<td>real</td>
-<td>previous time step sizes</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">dtlag</span></code></p></td>
+<td><p>( 10 )</p></td>
+<td><p>real</p></td>
+<td><p>previous time step sizes</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">istep</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>time step number</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">istep</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>time step number</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="geometry-variables">
-<h3>Geometry Variables<a class="headerlink" href="#geometry-variables" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
-<colgroup>
-<col width="15%" />
-<col width="28%" />
-<col width="13%" />
-<col width="44%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Variable Name</th>
-<th class="head">Size</th>
-<th class="head">Type</th>
-<th class="head">Short Description</th>
+</section>
+<section id="geometry-variables">
+<h3>Geometry Variables<a class="headerlink" href="#geometry-variables" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Short Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">xm1</span></code></td>
-<td>(lx1,ly1,lz1,lelt)</td>
-<td>real</td>
-<td>x-coordinates for velocity mesh</td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">xm1</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>x-coordinates for velocity mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ym1</span></code></td>
-<td>(lx1,ly1,lz1,lelt)</td>
-<td>real</td>
-<td>y-coordinates for velocity mesh</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ym1</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>y-coordinates for velocity mesh</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">zm1</span></code></td>
-<td>(lx1,ly1,lz1,lelt)</td>
-<td>real</td>
-<td>z-coordinates for velocity mesh</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">zm1</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>z-coordinates for velocity mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">bm1</span></code></td>
-<td>(lx1,ly1,lz1,lelt)</td>
-<td>real</td>
-<td>mass matrix for velocity mesh</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bm1</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>mass matrix for velocity mesh</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">binvm1</span></code></td>
-<td>(lx1,ly1,lz1,lelv)</td>
-<td>real</td>
-<td>inverse mass matrix for velocity mesh</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">binvm1</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>inverse mass matrix for velocity mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">bintm1</span></code></td>
-<td>(lx1,ly1,lz1,lelt)</td>
-<td>real</td>
-<td>inverse mass matrix for t mesh</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bintm1</span></code></p></td>
+<td><p>(lx1,ly1,lz1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>inverse mass matrix for t mesh</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">volvm1</span></code></td>
-<td>–</td>
-<td>real</td>
-<td>total volume for velocity mesh</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">volvm1</span></code></p></td>
+<td><p>–</p></td>
+<td><p>real</p></td>
+<td><p>total volume for velocity mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">voltm1</span></code></td>
-<td>–</td>
-<td>real</td>
-<td>total volume for t mesh</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">voltm1</span></code></p></td>
+<td><p>–</p></td>
+<td><p>real</p></td>
+<td><p>total volume for t mesh</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">xm2</span></code></td>
-<td>(lx2,ly2,lz2,lelv)</td>
-<td>real</td>
-<td>x-coordinates for pressure mesh</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">xm2</span></code></p></td>
+<td><p>(lx2,ly2,lz2,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>x-coordinates for pressure mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ym2</span></code></td>
-<td>(lx2,ly2,lz2,lelv)</td>
-<td>real</td>
-<td>y-coordinates for pressure mesh</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ym2</span></code></p></td>
+<td><p>(lx2,ly2,lz2,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>y-coordinates for pressure mesh</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">zm2</span></code></td>
-<td>(lx2,ly2,lz2,lelv)</td>
-<td>real</td>
-<td>z-coordinates for pressure mesh</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">zm2</span></code></p></td>
+<td><p>(lx2,ly2,lz2,lelv)</p></td>
+<td><p>real</p></td>
+<td><p>z-coordinates for pressure mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">unx</span></code></td>
-<td>(lx1,ly1,6,lelt)</td>
-<td>real</td>
-<td>x-component of face unit normal</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">unx</span></code></p></td>
+<td><p>(lx1,ly1,6,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>x-component of face unit normal</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">uny</span></code></td>
-<td>(lx1,ly1,6,lelt)</td>
-<td>real</td>
-<td>y-component of face unit normal</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">uny</span></code></p></td>
+<td><p>(lx1,ly1,6,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>y-component of face unit normal</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">unz</span></code></td>
-<td>(lx1,ly1,6,lelt)</td>
-<td>real</td>
-<td>z-component of face unit normal</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">unz</span></code></p></td>
+<td><p>(lx1,ly1,6,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>z-component of face unit normal</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">area</span></code></td>
-<td>(lx1,ly1,6,lelt)</td>
-<td>real</td>
-<td>face area (surface integral weights)</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">area</span></code></p></td>
+<td><p>(lx1,ly1,6,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>face area (surface integral weights)</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="problem-setup-variables">
-<h3>Problem Setup Variables<a class="headerlink" href="#problem-setup-variables" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
-<colgroup>
-<col width="15%" />
-<col width="28%" />
-<col width="13%" />
-<col width="44%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Variable Name</th>
-<th class="head">Size</th>
-<th class="head">Type</th>
-<th class="head">Short Description</th>
+</section>
+<section id="problem-setup-variables">
+<h3>Problem Setup Variables<a class="headerlink" href="#problem-setup-variables" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Short Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">nid</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>MPI rank id (lowest rank is always 0)</td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">nid</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>MPI rank id (lowest rank is always 0)</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">nio</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>I/O node id</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nio</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>I/O node id</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">nelv</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>number of elements in velocity mesh</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">nelv</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>number of elements in velocity mesh</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">nelt</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>number of elements in t mesh</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nelt</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>number of elements in t mesh</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">ndim</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>dimensionality of problem (i.e. 2 or 3)</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ndim</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>dimensionality of problem (i.e. 2 or 3)</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">nsteps</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>number of time steps to run</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nsteps</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>number of time steps to run</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">iostep</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>time steps between data output</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">iostep</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>time steps between data output</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">cbc</span></code></td>
-<td>(6,lelt,ldimt+1)</td>
-<td>character*3</td>
-<td>boundary condition</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cbc</span></code></p></td>
+<td><p>(6,lelt,ldimt+1)</p></td>
+<td><p>character*3</p></td>
+<td><p>boundary condition</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">lglel</span></code></td>
-<td>(lelt)</td>
-<td>integer</td>
-<td>local to global element number map</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">lglel</span></code></p></td>
+<td><p>(lelt)</p></td>
+<td><p>integer</p></td>
+<td><p>local to global element number map</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">gllel</span></code></td>
-<td>(lelg)</td>
-<td>integer</td>
-<td>global to local element number map</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">gllel</span></code></p></td>
+<td><p>(lelg)</p></td>
+<td><p>integer</p></td>
+<td><p>global to local element number map</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="averaging-variables">
-<h3>Averaging Variables<a class="headerlink" href="#averaging-variables" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="averaging-variables">
+<h3>Averaging Variables<a class="headerlink" href="#averaging-variables" title="Permalink to this heading"></a></h3>
 <p>Arrays associated with the <code class="docutils literal notranslate"><span class="pre">avg_all</span></code> subroutine</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="15%" />
-<col width="28%" />
-<col width="9%" />
-<col width="48%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Variable Name</th>
-<th class="head">Size</th>
-<th class="head">Type</th>
-<th class="head">Short Description</th>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Short Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">uavg</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged x-velocity</td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">uavg</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged x-velocity</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vavg</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged y-velocity</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vavg</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged y-velocity</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">wavg</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged z-velocity</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">wavg</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged z-velocity</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">pavg</span></code></td>
-<td>(ax2,ay2,az2,lelt)</td>
-<td>real</td>
-<td>time averaged pressure</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pavg</span></code></p></td>
+<td><p>(ax2,ay2,az2,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged pressure</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">tavg</span></code></td>
-<td>(ax1,ay1,az1,lelt,ldimt)</td>
-<td>real</td>
-<td>time averaged temperature and passive scalars</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tavg</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt,ldimt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged temperature and passive scalars</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">urms</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged u^2</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">urms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged u^2</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">vrms</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged v^2</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vrms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged v^2</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">wrms</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged w^2</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">wrms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged w^2</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">prms</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged pr^2</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">prms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged pr^2</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">trms</span></code></td>
-<td>(ax1,ay1,az1,lelt,ldimt)</td>
-<td>real</td>
-<td>time averaged t^2 and ps^2</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">trms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt,ldimt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged t^2 and ps^2</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">uvms</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged uv</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">uvms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged uv</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">vwms</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged vw</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vwms</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged vw</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">wums</span></code></td>
-<td>(ax1,ay1,az1,lelt)</td>
-<td>real</td>
-<td>time averaged wu</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">wums</span></code></p></td>
+<td><p>(ax1,ay1,az1,lelt)</p></td>
+<td><p>real</p></td>
+<td><p>time averaged wu</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">iastep</span></code></td>
-<td>–</td>
-<td>integer</td>
-<td>time steps between averaged data output</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">iastep</span></code></p></td>
+<td><p>–</p></td>
+<td><p>integer</p></td>
+<td><p>time steps between averaged data output</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="section" id="commonly-used-subroutines">
-<span id="append-subroutines"></span><h2>Commonly used Subroutines<a class="headerlink" href="#commonly-used-subroutines" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">rescale_x(x,x0,x1)</span></code></dt>
-<dd>Rescales the array <code class="docutils literal notranslate"><span class="pre">x</span></code> to be in the range <code class="docutils literal notranslate"><span class="pre">(x0,x1)</span></code>. This is usually called from <code class="docutils literal notranslate"><span class="pre">usrdat2</span></code> in the <code class="docutils literal notranslate"><span class="pre">.usr</span></code> file</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">normvc(h1,semi,l2,linf,x1,x2,x3)</span></code></dt>
-<dd>Computes the error norms of a vector field variable <code class="docutils literal notranslate"><span class="pre">(x1,x2,x3)</span></code> defined on mesh 1, the velocity mesh. The error norms are normalized with respect to the volume, with the exception on the infinity norm, <code class="docutils literal notranslate"><span class="pre">linf</span></code>.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">comp_vort3(vort,work1,work2,u,v,w)</span></code></dt>
-<dd>Computes the vorticity (<code class="docutils literal notranslate"><span class="pre">vort</span></code>) of the velocity field, <code class="docutils literal notranslate"><span class="pre">(u,v,w)</span></code></dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">lambda2(l2)</span></code></dt>
-<dd>Generates the Lambda-2 vortex criterion proposed by Jeong and Hussain (1995)</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">planar_average_z(ua,u,w1,w2)</span></code></dt>
-<dd>Computes the r-s planar average of the quantity <code class="docutils literal notranslate"><span class="pre">u</span></code>.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">torque_calc(scale,x0,ifdout,iftout)</span></code></dt>
-<dd>Computes torque about the point <code class="docutils literal notranslate"><span class="pre">x0</span></code>. Here scale is a user supplied multiplier so that the results may be scaled to any convenient non-dimensionalization. Both the drag and the torque can be printed to the screen by switching the appropriate <code class="docutils literal notranslate"><span class="pre">ifdout(drag)</span></code> or <code class="docutils literal notranslate"><span class="pre">iftout(torque)</span></code> logical.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">set_obj</span></code></dt>
-<dd>Defines objects for surface integrals by changing the value of <code class="docutils literal notranslate"><span class="pre">hcode</span></code> for future calculations. Typically called once within <code class="docutils literal notranslate"><span class="pre">userchk</span></code> (for <code class="docutils literal notranslate"><span class="pre">istep</span> <span class="pre">=</span> <span class="pre">0</span></code>) and used for calculating torque. (see above)</dd>
+</section>
+</section>
+<section id="commonly-used-subroutines">
+<span id="append-subroutines"></span><h2>Commonly used Subroutines<a class="headerlink" href="#commonly-used-subroutines" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">rescale_x(x,x0,x1)</span></code></dt><dd><p>Rescales the array <code class="docutils literal notranslate"><span class="pre">x</span></code> to be in the range <code class="docutils literal notranslate"><span class="pre">(x0,x1)</span></code>. This is usually called from <code class="docutils literal notranslate"><span class="pre">usrdat2</span></code> in the <code class="docutils literal notranslate"><span class="pre">.usr</span></code> file</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">normvc(h1,semi,l2,linf,x1,x2,x3)</span></code></dt><dd><p>Computes the error norms of a vector field variable <code class="docutils literal notranslate"><span class="pre">(x1,x2,x3)</span></code> defined on mesh 1, the velocity mesh. The error norms are normalized with respect to the volume, with the exception on the infinity norm, <code class="docutils literal notranslate"><span class="pre">linf</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">comp_vort3(vort,work1,work2,u,v,w)</span></code></dt><dd><p>Computes the vorticity (<code class="docutils literal notranslate"><span class="pre">vort</span></code>) of the velocity field, <code class="docutils literal notranslate"><span class="pre">(u,v,w)</span></code></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">lambda2(l2)</span></code></dt><dd><p>Generates the Lambda-2 vortex criterion proposed by Jeong and Hussain (1995)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">planar_average_z(ua,u,w1,w2)</span></code></dt><dd><p>Computes the r-s planar average of the quantity <code class="docutils literal notranslate"><span class="pre">u</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">torque_calc(scale,x0,ifdout,iftout)</span></code></dt><dd><p>Computes torque about the point <code class="docutils literal notranslate"><span class="pre">x0</span></code>. Here scale is a user supplied multiplier so that the results may be scaled to any convenient non-dimensionalization. Both the drag and the torque can be printed to the screen by switching the appropriate <code class="docutils literal notranslate"><span class="pre">ifdout(drag)</span></code> or <code class="docutils literal notranslate"><span class="pre">iftout(torque)</span></code> logical.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">set_obj</span></code></dt><dd><p>Defines objects for surface integrals by changing the value of <code class="docutils literal notranslate"><span class="pre">hcode</span></code> for future calculations. Typically called once within <code class="docutils literal notranslate"><span class="pre">userchk</span></code> (for <code class="docutils literal notranslate"><span class="pre">istep</span> <span class="pre">=</span> <span class="pre">0</span></code>) and used for calculating torque. (see above)</p>
+</dd>
 </dl>
 <p><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">avg1(avg,f,</span> <span class="pre">alpha,beta,n,name,ifverbose)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">avg2(avg,f,</span> <span class="pre">alpha,beta,n,name,ifverbose)</span></code></p>
-<dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">avg3(avg,f,g,</span> <span class="pre">alpha,beta,n,name,ifverbose)</span></code></dt>
-<dd>These three subroutines calculate the (weighted) average of <code class="docutils literal notranslate"><span class="pre">f</span></code>. Depending on the value of the logical, <code class="docutils literal notranslate"><span class="pre">ifverbose</span></code>, the results will be printed to standard output along with name. In <code class="docutils literal notranslate"><span class="pre">avg2</span></code>, the <code class="docutils literal notranslate"><span class="pre">f</span></code> component is squared. In <code class="docutils literal notranslate"><span class="pre">avg3</span></code>, vector <code class="docutils literal notranslate"><span class="pre">g</span></code> also contributes to the average calculation.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">outpost(x,vy,vz,pr,tz,'</span> <span class="pre">')</span></code></dt>
-<dd>Dumps the current data of <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">vy</span></code>, <code class="docutils literal notranslate"><span class="pre">vz</span></code>, <code class="docutils literal notranslate"><span class="pre">pr</span></code>, <code class="docutils literal notranslate"><span class="pre">tz</span></code> to an <code class="docutils literal notranslate"><span class="pre">.fld</span></code> or <code class="docutils literal notranslate"><span class="pre">.f0????</span></code> file for post processing.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">platform_timer(ivrb)</span></code></dt>
-<dd>Runs the battery of timing tests for matrix-matrix products,contention-free processor-to-processor ping-pong tests, and <code class="docutils literal notranslate"><span class="pre">mpi_all_reduce</span></code> times. Allows one to check the performance of the communication routines used on specific platforms.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">quickmv</span></code></dt>
-<dd>Moves the mesh to allow user affine motion.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">runtimeavg(ay,y,j,istep1,ipostep,s5)</span></code></dt>
-<dd>Computes, stores, and (for <code class="docutils literal notranslate"><span class="pre">ipostep!0</span></code>) prints runtime averages of <code class="docutils literal notranslate"><span class="pre">j</span></code>-quantity <code class="docutils literal notranslate"><span class="pre">y</span></code> (along w/ <code class="docutils literal notranslate"><span class="pre">y</span></code> itself unless <code class="docutils literal notranslate"><span class="pre">ipostep&lt;0</span></code>) with <code class="docutils literal notranslate"><span class="pre">j</span></code> + ‘<code class="docutils literal notranslate"><span class="pre">rtavg_</span></code>’ + (unique) <code class="docutils literal notranslate"><span class="pre">s5</span></code> every <code class="docutils literal notranslate"><span class="pre">ipostep</span></code> for <code class="docutils literal notranslate"><span class="pre">istep&gt;=istep1</span></code>. <code class="docutils literal notranslate"><span class="pre">s5</span></code> is a string to append to <code class="docutils literal notranslate"><span class="pre">rtavg_</span></code> for storage file naming.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">lagrng(uo,y,yvec,uvec,work,n,m)</span></code></dt>
-<dd>Compute Lagrangian interpolant for <code class="docutils literal notranslate"><span class="pre">uo</span></code></dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">opcopy(a1,a2,a3,b1,b2,b3)</span></code></dt>
-<dd>Copies <code class="docutils literal notranslate"><span class="pre">b1</span></code> to <code class="docutils literal notranslate"><span class="pre">a1</span></code>, <code class="docutils literal notranslate"><span class="pre">b2</span></code> to <code class="docutils literal notranslate"><span class="pre">a2</span></code>, and <code class="docutils literal notranslate"><span class="pre">b3</span></code> to <code class="docutils literal notranslate"><span class="pre">a3</span></code>, when <code class="docutils literal notranslate"><span class="pre">ndim</span> <span class="pre">=</span> <span class="pre">3</span></code>,</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">cadd(a,const,n)</span></code></dt>
-<dd>Adds <code class="docutils literal notranslate"><span class="pre">const</span></code> to vector <code class="docutils literal notranslate"><span class="pre">a</span></code> of size <code class="docutils literal notranslate"><span class="pre">n</span></code>.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">col2(a,b,n)</span></code></dt>
-<dd>For <code class="docutils literal notranslate"><span class="pre">n</span></code> entries, calculates <code class="docutils literal notranslate"><span class="pre">a=a*b</span></code>.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">col3(a,b,c,n)</span></code></dt>
-<dd>For <code class="docutils literal notranslate"><span class="pre">n</span></code> entries, calculates <code class="docutils literal notranslate"><span class="pre">a=b*c</span></code>.</dd>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">avg3(avg,f,g,</span> <span class="pre">alpha,beta,n,name,ifverbose)</span></code></dt><dd><p>These three subroutines calculate the (weighted) average of <code class="docutils literal notranslate"><span class="pre">f</span></code>. Depending on the value of the logical, <code class="docutils literal notranslate"><span class="pre">ifverbose</span></code>, the results will be printed to standard output along with name. In <code class="docutils literal notranslate"><span class="pre">avg2</span></code>, the <code class="docutils literal notranslate"><span class="pre">f</span></code> component is squared. In <code class="docutils literal notranslate"><span class="pre">avg3</span></code>, vector <code class="docutils literal notranslate"><span class="pre">g</span></code> also contributes to the average calculation.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">outpost(x,vy,vz,pr,tz,'</span> <span class="pre">')</span></code></dt><dd><p>Dumps the current data of <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">vy</span></code>, <code class="docutils literal notranslate"><span class="pre">vz</span></code>, <code class="docutils literal notranslate"><span class="pre">pr</span></code>, <code class="docutils literal notranslate"><span class="pre">tz</span></code> to an <code class="docutils literal notranslate"><span class="pre">.fld</span></code> or <code class="docutils literal notranslate"><span class="pre">.f0????</span></code> file for post processing.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">platform_timer(ivrb)</span></code></dt><dd><p>Runs the battery of timing tests for matrix-matrix products,contention-free processor-to-processor ping-pong tests, and <code class="docutils literal notranslate"><span class="pre">mpi_all_reduce</span></code> times. Allows one to check the performance of the communication routines used on specific platforms.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">quickmv</span></code></dt><dd><p>Moves the mesh to allow user affine motion.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">runtimeavg(ay,y,j,istep1,ipostep,s5)</span></code></dt><dd><p>Computes, stores, and (for <code class="docutils literal notranslate"><span class="pre">ipostep!0</span></code>) prints runtime averages of <code class="docutils literal notranslate"><span class="pre">j</span></code>-quantity <code class="docutils literal notranslate"><span class="pre">y</span></code> (along w/ <code class="docutils literal notranslate"><span class="pre">y</span></code> itself unless <code class="docutils literal notranslate"><span class="pre">ipostep&lt;0</span></code>) with <code class="docutils literal notranslate"><span class="pre">j</span></code> + ‘<code class="docutils literal notranslate"><span class="pre">rtavg_</span></code>’ + (unique) <code class="docutils literal notranslate"><span class="pre">s5</span></code> every <code class="docutils literal notranslate"><span class="pre">ipostep</span></code> for <code class="docutils literal notranslate"><span class="pre">istep&gt;=istep1</span></code>. <code class="docutils literal notranslate"><span class="pre">s5</span></code> is a string to append to <code class="docutils literal notranslate"><span class="pre">rtavg_</span></code> for storage file naming.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">lagrng(uo,y,yvec,uvec,work,n,m)</span></code></dt><dd><p>Compute Lagrangian interpolant for <code class="docutils literal notranslate"><span class="pre">uo</span></code></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">opcopy(a1,a2,a3,b1,b2,b3)</span></code></dt><dd><p>Copies <code class="docutils literal notranslate"><span class="pre">b1</span></code> to <code class="docutils literal notranslate"><span class="pre">a1</span></code>, <code class="docutils literal notranslate"><span class="pre">b2</span></code> to <code class="docutils literal notranslate"><span class="pre">a2</span></code>, and <code class="docutils literal notranslate"><span class="pre">b3</span></code> to <code class="docutils literal notranslate"><span class="pre">a3</span></code>, when <code class="docutils literal notranslate"><span class="pre">ndim</span> <span class="pre">=</span> <span class="pre">3</span></code>,</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">cadd(a,const,n)</span></code></dt><dd><p>Adds <code class="docutils literal notranslate"><span class="pre">const</span></code> to vector <code class="docutils literal notranslate"><span class="pre">a</span></code> of size <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">col2(a,b,n)</span></code></dt><dd><p>For <code class="docutils literal notranslate"><span class="pre">n</span></code> entries, calculates <code class="docutils literal notranslate"><span class="pre">a=a*b</span></code>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">col3(a,b,c,n)</span></code></dt><dd><p>For <code class="docutils literal notranslate"><span class="pre">n</span></code> entries, calculates <code class="docutils literal notranslate"><span class="pre">a=b*c</span></code>.</p>
+</dd>
 </dl>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glmax(a,n)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glamax(a,n)</span></code></p>
-<dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">iglmax(a,n)</span></code></dt>
-<dd>Calculates the (absolute) max of a vector that is size <code class="docutils literal notranslate"><span class="pre">n</span></code>. Prefix <code class="docutils literal notranslate"><span class="pre">i</span></code> implies integer type.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">i8glmax(a,n)</span></code></dt>
-<dd>Calculates the max of an integer*8 vector that is size <code class="docutils literal notranslate"><span class="pre">n</span></code>.</dd>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">iglmax(a,n)</span></code></dt><dd><p>Calculates the (absolute) max of a vector that is size <code class="docutils literal notranslate"><span class="pre">n</span></code>. Prefix <code class="docutils literal notranslate"><span class="pre">i</span></code> implies integer type.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">i8glmax(a,n)</span></code></dt><dd><p>Calculates the max of an integer*8 vector that is size <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+</dd>
 </dl>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glmin(a,n)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glamin(a,n)</span></code></p>
-<dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">iglmin(a,n)</span></code></dt>
-<dd>Calculates the (absolute) min of a vector that is size <code class="docutils literal notranslate"><span class="pre">n</span></code>. Prefix <code class="docutils literal notranslate"><span class="pre">i</span></code> implies integer type.</dd>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">iglmin(a,n)</span></code></dt><dd><p>Calculates the (absolute) min of a vector that is size <code class="docutils literal notranslate"><span class="pre">n</span></code>. Prefix <code class="docutils literal notranslate"><span class="pre">i</span></code> implies integer type.</p>
+</dd>
 </dl>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glsc2(a,b,n)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glsc3(a,b,mult,n)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glsc23(a,b,c,n)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">glsum(a,n)</span></code></p>
 <blockquote>
-<div>Computes the global sum of the real arrays <code class="docutils literal notranslate"><span class="pre">a</span></code>, with number of local entries <code class="docutils literal notranslate"><span class="pre">n</span></code></div></blockquote>
+<div><p>Computes the global sum of the real arrays <code class="docutils literal notranslate"><span class="pre">a</span></code>, with number of local entries <code class="docutils literal notranslate"><span class="pre">n</span></code></p>
+</div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">iglsum(a,n)</span></code></p>
 <blockquote>
-<div>Computes the global sum of the integer arrays <code class="docutils literal notranslate"><span class="pre">a</span></code>, with number of local entries <code class="docutils literal notranslate"><span class="pre">n</span></code></div></blockquote>
+<div><p>Computes the global sum of the integer arrays <code class="docutils literal notranslate"><span class="pre">a</span></code>, with number of local entries <code class="docutils literal notranslate"><span class="pre">n</span></code></p>
+</div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">i8glsum(a,n)</span></code></p>
 <blockquote>
-<div>Computes the global sum of the integer*8 arrays <code class="docutils literal notranslate"><span class="pre">a</span></code>, with number of local entries <code class="docutils literal notranslate"><span class="pre">n</span></code></div></blockquote>
-<dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">surface_int(dphi,dS,phi,ielem,iside)</span></code></dt>
-<dd>Computes the surface integral of scalar array <code class="docutils literal notranslate"><span class="pre">phi</span></code> over face <code class="docutils literal notranslate"><span class="pre">iside</span></code> of element <code class="docutils literal notranslate"><span class="pre">ielem</span></code>.
-The resulting integral is storted in <code class="docutils literal notranslate"><span class="pre">dphi</span></code> and the area in <code class="docutils literal notranslate"><span class="pre">dS</span></code>.</dd>
+<div><p>Computes the global sum of the integer*8 arrays <code class="docutils literal notranslate"><span class="pre">a</span></code>, with number of local entries <code class="docutils literal notranslate"><span class="pre">n</span></code></p>
+</div></blockquote>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">subroutine</span> <span class="pre">surface_int(dphi,dS,phi,ielem,iside)</span></code></dt><dd><p>Computes the surface integral of scalar array <code class="docutils literal notranslate"><span class="pre">phi</span></code> over face <code class="docutils literal notranslate"><span class="pre">iside</span></code> of element <code class="docutils literal notranslate"><span class="pre">ielem</span></code>.
+The resulting integral is storted in <code class="docutils literal notranslate"><span class="pre">dphi</span></code> and the area in <code class="docutils literal notranslate"><span class="pre">dS</span></code>.</p>
+</dd>
 </dl>
-</div>
-<div class="section" id="generating-a-mesh-with-genbox">
-<span id="mesh-gen"></span><h2>Generating a Mesh with Genbox<a class="headerlink" href="#generating-a-mesh-with-genbox" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uniformly-distributed-mesh">
-<h3>Uniformly Distributed Mesh<a class="headerlink" href="#uniformly-distributed-mesh" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="generating-a-mesh-with-genbox">
+<span id="mesh-gen"></span><h2>Generating a Mesh with Genbox<a class="headerlink" href="#generating-a-mesh-with-genbox" title="Permalink to this heading"></a></h2>
+<section id="uniformly-distributed-mesh">
+<h3>Uniformly Distributed Mesh<a class="headerlink" href="#uniformly-distributed-mesh" title="Permalink to this heading"></a></h3>
 <p>Suppose you wish to simulate flow through an axisymmetric pipe,
 of radius <span class="math notranslate nohighlight">\(R=0.5\)</span> and length <span class="math notranslate nohighlight">\(L=4\)</span>.  You estimate that you will
 need 3 elements in radial <span class="math notranslate nohighlight">\((y)\)</span> direction, and 5 in the <span class="math notranslate nohighlight">\(x\)</span> direction,
@@ -914,103 +816,72 @@ Box 1                         Pipe
 v  ,O  ,A  ,W  ,   ,          BC&#39;s:  (cbx0, cbx1, cby0, cby1, cbz0, cbz1)
 </pre></div>
 </div>
-<div class="align-center figure" id="id3">
+<figure class="align-center" id="id3">
 <span id="fig-mesh-axi1"></span><img alt="axis-pipe-mesh" src="figs/mesh_axi1.png" />
-<p class="caption"><span class="caption-text">Axisymmetric pipe mesh.</span></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Axisymmetric pipe mesh.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <ul class="simple">
-<li>The first line of this file supplies the name of an existing 2D <code class="docutils literal notranslate"><span class="pre">.rea</span></code> file that has the appropriate run parameters (viscosity, timestep size, etc.). These parameters can be modified later, but it is important that <code class="docutils literal notranslate"><span class="pre">axisymmetric.rea</span></code> be a 2D file, and not a 3D file.</li>
-<li>The second line indicates the number of fields for this simulation, in this case, just 1, corresponding to the velocity field (i.e., no heat transfer).</li>
-<li>The next set of lines just shows how one can place comments into a <code class="docutils literal notranslate"><span class="pre">genbox</span></code> input file.</li>
-<li>The line that starts with “Box” indicates that a new box is starting, and that the following lines describe a typical box input.  Other possible key characters (the first character of Box, “B”) are “C” and “M”, more on those later.</li>
-<li>The first line after “Box” specifies the number of elements in the
+<li><p>The first line of this file supplies the name of an existing 2D <code class="docutils literal notranslate"><span class="pre">.rea</span></code> file that has the appropriate run parameters (viscosity, timestep size, etc.). These parameters can be modified later, but it is important that <code class="docutils literal notranslate"><span class="pre">axisymmetric.rea</span></code> be a 2D file, and not a 3D file.</p></li>
+<li><p>The second line indicates the number of fields for this simulation, in this case, just 1, corresponding to the velocity field (i.e., no heat transfer).</p></li>
+<li><p>The next set of lines just shows how one can place comments into a <code class="docutils literal notranslate"><span class="pre">genbox</span></code> input file.</p></li>
+<li><p>The line that starts with “Box” indicates that a new box is starting, and that the following lines describe a typical box input.  Other possible key characters (the first character of Box, “B”) are “C” and “M”, more on those later.</p></li>
+<li><p>The first line after “Box” specifies the number of elements in the
 <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions.   The fact that these values are negative indicates
 that you want <code class="docutils literal notranslate"><span class="pre">genbox</span></code> to automatically generate the element distribution
-along each axis, rather than providing it by hand.  (More on this below.)</li>
-<li>The next line specifies the distribution of the 5 elements in the <span class="math notranslate nohighlight">\(x\)</span> direction.
+along each axis, rather than providing it by hand.  (More on this below.)</p></li>
+<li><p>The next line specifies the distribution of the 5 elements in the <span class="math notranslate nohighlight">\(x\)</span> direction.
 The mesh starts at <span class="math notranslate nohighlight">\(x=0\)</span> and ends at <span class="math notranslate nohighlight">\(x=4.0\)</span>.  The <code class="docutils literal notranslate"><span class="pre">ratio</span></code> indicates the
-relative size of each element, progressing from left to right.</li>
-<li>The next line specifies the distribution of the 3 elements in the <span class="math notranslate nohighlight">\(y\)</span> direction,
+relative size of each element, progressing from left to right.</p></li>
+<li><p>The next line specifies the distribution of the 3 elements in the <span class="math notranslate nohighlight">\(y\)</span> direction,
 starting at <span class="math notranslate nohighlight">\(y=0\)</span> and going to <span class="math notranslate nohighlight">\(y=0.5\)</span>.  Again,
-<code class="docutils literal notranslate"><span class="pre">ratio</span></code> =1.0 indicates that the elements will be of uniform height.</li>
-<li>The last line specifies boundary conditions on each of the 4 sides of the
-box:<ul>
-<li>Lower-case <em>v</em> indicates that the left <span class="math notranslate nohighlight">\((x)\)</span> boundary is to be a velocity
+<code class="docutils literal notranslate"><span class="pre">ratio</span></code> =1.0 indicates that the elements will be of uniform height.</p></li>
+<li><p>The last line specifies boundary conditions on each of the 4 sides of the
+box:</p>
+<ul>
+<li><p>Lower-case <em>v</em> indicates that the left <span class="math notranslate nohighlight">\((x)\)</span> boundary is to be a velocity
 boundary condition, with a user-specified distribution determined by
 routine <code class="docutils literal notranslate"><span class="pre">userbc</span></code> in the <code class="docutils literal notranslate"><span class="pre">.usr</span></code> file.  (Upper-case <span class="math notranslate nohighlight">\(V\)</span> would indicate that
-the velocity is constant, with values specified in the .rea file.)</li>
-<li><em>O</em> indicates that the right <span class="math notranslate nohighlight">\((x)\)</span> boundary is an outflow boundary – the
-flow leaves the domain at the left and the default exit pressure is <span class="math notranslate nohighlight">\(p=0\)</span>.</li>
-<li><em>A</em> indicates that the lower <span class="math notranslate nohighlight">\((y)\)</span> boundary is the axis—this condition
+the velocity is constant, with values specified in the .rea file.)</p></li>
+<li><p><em>O</em> indicates that the right <span class="math notranslate nohighlight">\((x)\)</span> boundary is an outflow boundary – the
+flow leaves the domain at the left and the default exit pressure is <span class="math notranslate nohighlight">\(p=0\)</span>.</p></li>
+<li><p><em>A</em> indicates that the lower <span class="math notranslate nohighlight">\((y)\)</span> boundary is the axis—this condition
 is mandatory for the axisymmetric case, given the fact that the lower domain
-boundary is at <span class="math notranslate nohighlight">\(y=0\)</span>, which corresponds to <span class="math notranslate nohighlight">\(r=0\)</span>.</li>
-<li><em>W</em> indicates that the upper <span class="math notranslate nohighlight">\((y)\)</span> boundary is a wall.  This would be
-equivalent to a <em>v</em> or <em>V</em> boundary condition, with <span class="math notranslate nohighlight">\({\bf u}=0\)</span>.</li>
+boundary is at <span class="math notranslate nohighlight">\(y=0\)</span>, which corresponds to <span class="math notranslate nohighlight">\(r=0\)</span>.</p></li>
+<li><p><em>W</em> indicates that the upper <span class="math notranslate nohighlight">\((y)\)</span> boundary is a wall.  This would be
+equivalent to a <em>v</em> or <em>V</em> boundary condition, with <span class="math notranslate nohighlight">\({\bf u}=0\)</span>.</p></li>
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="examples.html" class="btn btn-neutral" title="Problem Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="examples.html" class="btn btn-neutral float-left" title="Problem Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2019, Yunchao Yang.
-
-    </p>
+    <p>&#169; Copyright 2019, Yunchao Yang.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'beta',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
