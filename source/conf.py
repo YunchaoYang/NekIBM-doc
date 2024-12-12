@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'NekIBM'
-copyright = '2019, Yunchao Yang'
+copyright = '2019-2024, Yunchao Yang'
 author = 'Yunchao Yang'
 
 # The short X.Y version
