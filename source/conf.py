@@ -46,6 +46,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'recommonmark',
     "sphinx_rtd_theme",
+    'sphinxcontrib.youtube',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

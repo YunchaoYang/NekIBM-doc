@@ -4,6 +4,10 @@
  A Parallel Immersed Boundary Implementation based on Nek5000/CMTenk 
 ===============================================================================================
 
+.. youtube:: b_vJGWxVNRQ
+   :width: 640
+   :height: 360
+
 
 Quickstart
 ----------
